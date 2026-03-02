@@ -15,35 +15,9 @@
 - Запустите 08_analysis_queries.sql для анализа производительности
 - Запустите 09_optimized_queries.sql для сравнения с оптимизированными запросами
 
-Проверка работы:
-1. Проверьте созданные таблицы:
-   SELECT * FROM categories;
-   SELECT * FROM suppliers;
-   SELECT * FROM products;
-   SELECT * FROM supplies;
-
-2. Проверьте представления:
-   SELECT * FROM vw_product_details;
-   SELECT * FROM vw_category_stats;
-   SELECT * FROM vw_supply_history;
-
-3. Проверьте процедуры:
-   CALL add_product('Тестовый товар', 1, 1, 10, 999.99);
-   CALL register_supply(1, 1, 5, 900.00);
-
-4. Проверьте роли:
-   Создайте подключения с пользователями manager и viewer
-
 Резервное копирование:
 - Запустите backup_restore_scripts\backup.bat
 
 Восстановление:
 - Запустите backup_restore_scripts\restore.bat
-
-Результат:
-✅ Работоспособная БД с полной структурой
-✅ Реализованные роли и права доступа
-✅ Скрипты резервного копирования
-✅ Оптимизированные запросы
-✅ Документация по использованию
 
